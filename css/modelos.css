@@ -58,7 +58,7 @@ nav ul {
 }
 
 .link.hover-link:hover::before {
-  animation: fill 1s forwards;
+  animation: fill 0.6s forwards;
 }
 
 @keyframes fill {
@@ -72,7 +72,7 @@ nav ul {
   100% {
     width: 100%;
     height: 100%;
-    background: hsl(264, 70%, 22%);
+    background: hsl(40, 83%, 49%);
   }
 }
 
@@ -83,19 +83,22 @@ nav ul {
   box-sizing: border-box;
 } 
 
-body {
+main {
   height: auto;
-  max-width: 1600px;
-  background-color: #030b0d;
   display: grid;
-  grid-template-columns: repeat(auto-fit), minmax(400px, 1fr);
-  place-content: center;
-  gap: 1rem;
+  max-width: 1800px;
+  margin: 0 auto;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  background-color: #030b0d;
   font-family: "Inter", sans-serif;
   color: white;
 }
 
+
 /* tarjetas de modelos */
+
+
 /* Tarjeta del mustang */
 .card-mustang {
   width: 400px;
