@@ -23,8 +23,8 @@ header {
     justify-content: center;
     align-items: center;
     background: hsl(97, 67%, 44%);
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: auto;
     left: 0;
     width: 100%;
 }
