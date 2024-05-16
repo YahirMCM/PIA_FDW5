@@ -78,7 +78,7 @@ nav ul {
 
 
 /* tarjetas de modelos */
-
+/* Tarjeta del mustang */
 * {
   margin: 0;
   padding: 0;
@@ -86,27 +86,30 @@ nav ul {
 } 
 
 body {
-  height: 100vh;
+  height: auto;
+  max-width: 1600px;
   background-color: #030b0d;
   display: grid;
-  place-items: center;
+  grid-template-columns: repeat(auto-fit), minmax(400px, 1fr);
+  place-content: center;
+  gap: 1rem;
   font-family: "Inter", sans-serif;
   color: white;
 }
 
-.card {
+.card-mustang {
   width: 400px;
   aspect-ratio: 1 / 0.7;
   border-radius: 8px;
   position: relative;
   cursor: pointer;
 }
-.card .image-box {
+.card-mustang .image-box-mustang {
   width: 100%;
   height: 100%;
   border-radius: inherit;
 }
-.card .image-box img {
+.card-mustang .image-box-mustang img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -115,7 +118,7 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.card::after {
+.card-mustang::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -125,15 +128,15 @@ body {
   transition: 0.4s ease-in-out;
 }
 
-.card:hover img {
+.card-mustang:hover img {
   filter: grayscale(1) brightness(0.4);
 }
-.card:hover::after {
+.card-mustang:hover::after {
   opacity: 1;
   inset: 20px;
 }
 
-.content {
+.content-mustang {
   width: 80%;
   position: absolute;
   top: 50%;
@@ -142,26 +145,100 @@ body {
   text-align: center;
 }
 
-.content h2,
-.content p {
+.content-mustang h2,
+.content-mustang p {
   opacity: 0;
   transition: 0.4s 0.2s ease;
 }
-.content h2 {
+.content-mustang h2 {
   margin-bottom: 12px;
   scale: 0.7;
 }
-.content p {
+.content-mustang p {
   font-size: 14px;
   line-height: 1.5;
   color: #d1d1d1;
   transform: translateY(50%);
 }
-.card:hover .content h2 {
+.card-mustang:hover .content-mustang h2 {
   scale: 1;
   opacity: 1;
 }
-.card:hover .content P {
+.card-mustang:hover .content-mustang P {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tarjeta del Lambo */
+
+.card-lambo {
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+.card-lambo .image-box-lambo {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.card-lambo .image-box-lambo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 90%;
+  border-radius: inherit;
+  transition: 0.5s ease-in-out;
+}
+
+.card-lambo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card-lambo:hover img {
+  filter: grayscale(1) brightness(0.4);
+}
+.card-lambo:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content-lambo {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content-lambo h2,
+.content-lambo p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+.content-lambo h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+}
+.content-lambo p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d1d1d1;
+  transform: translateY(50%);
+}
+.card-lambo:hover .content-lambo h2 {
+  scale: 1;
+  opacity: 1;
+}
+.card-lambo:hover .content-lambo P {
   opacity: 1;
   transform: translateY(0);
 }
