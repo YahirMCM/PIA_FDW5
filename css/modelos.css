@@ -100,19 +100,19 @@ main {
 
 
 /* Tarjeta del mustang */
-.card-mustang {
+.card-carros {
   width: 400px;
   aspect-ratio: 1 / 0.7;
   border-radius: 8px;
   position: relative;
   cursor: pointer;
 }
-.card-mustang .image-box-mustang {
+.card-carros .image-box-carros {
   width: 100%;
   height: 100%;
   border-radius: inherit;
 }
-.card-mustang .image-box-mustang img {
+.card-carros .image-box-carros img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -121,7 +121,7 @@ main {
   transition: 0.5s ease-in-out;
 }
 
-.card-mustang::after {
+.card-carros::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -131,15 +131,15 @@ main {
   transition: 0.4s ease-in-out;
 }
 
-.card-mustang:hover img {
+.card-carros:hover img {
   filter: grayscale(1) brightness(0.4);
 }
-.card-mustang:hover::after {
+.card-carros:hover::after {
   opacity: 1;
   inset: 20px;
 }
 
-.content-mustang {
+.content-carros {
   width: 80%;
   position: absolute;
   top: 50%;
@@ -148,100 +148,26 @@ main {
   text-align: center;
 }
 
-.content-mustang h2,
-.content-mustang p {
+.content-carros h2,
+.content-carros p {
   opacity: 0;
   transition: 0.4s 0.2s ease;
 }
-.content-mustang h2 {
+.content-carros h2 {
   margin-bottom: 12px;
   scale: 0.7;
 }
-.content-mustang p {
+.content-carros p {
   font-size: 14px;
   line-height: 1.5;
   color: #d1d1d1;
   transform: translateY(50%);
 }
-.card-mustang:hover .content-mustang h2 {
+.card-carros:hover .content-carros h2 {
   scale: 1;
   opacity: 1;
 }
-.card-mustang:hover .content-mustang P {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Tarjeta del Lambo */
-
-.card-lambo {
-  width: 400px;
-  aspect-ratio: 1 / 0.7;
-  border-radius: 8px;
-  position: relative;
-  cursor: pointer;
-}
-.card-lambo .image-box-lambo {
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-}
-.card-lambo .image-box-lambo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 90%;
-  border-radius: inherit;
-  transition: 0.5s ease-in-out;
-}
-
-.card-lambo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 2px solid white;
-  border-radius: inherit;
-  opacity: 0;
-  transition: 0.4s ease-in-out;
-}
-
-.card-lambo:hover img {
-  filter: grayscale(1) brightness(0.4);
-}
-.card-lambo:hover::after {
-  opacity: 1;
-  inset: 20px;
-}
-
-.content-lambo {
-  width: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.content-lambo h2,
-.content-lambo p {
-  opacity: 0;
-  transition: 0.4s 0.2s ease;
-}
-.content-lambo h2 {
-  margin-bottom: 12px;
-  scale: 0.7;
-}
-.content-lambo p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #d1d1d1;
-  transform: translateY(50%);
-}
-.card-lambo:hover .content-lambo h2 {
-  scale: 1;
-  opacity: 1;
-}
-.card-lambo:hover .content-lambo P {
+.card-carros:hover .content-carros P {
   opacity: 1;
   transform: translateY(0);
 }
