@@ -80,7 +80,7 @@ body {
 /*   background: #0c0b0f; */
   font-family: "Euclid Circular A", "Poppins";
   color: #f0e5ff;
-  background-image: url(img\LOGO_CARWASH.jpg);
+  background-image: url(img\aston_martin.jpg);
 }
 
 main {
@@ -138,13 +138,13 @@ section:last-child {
 }
 
 #bg-logo{
-  background-image: url(C:\Users\DELL\Documents\GitHub\PIA_FDW5\img\LOGO_CARWASH.jpg);
+  background-image: url(img\aston_martin.jpg);
   background-size: cover;
 
 }
 
 section.bg::after {
-  background: url(img/LOGO_CARWASH.svg);
+  background: url(img\aston_martin.jpg);
   background-size: cover;
 }
 

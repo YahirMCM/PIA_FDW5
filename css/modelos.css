@@ -83,6 +83,14 @@ nav ul {
   box-sizing: border-box;
 } 
 
+section{
+  display: grid;
+  background-color: #080c21;
+  font-family: "Inter", sans-serif;
+  color: white;
+  justify-content: center;
+}
+
 main {
   height: auto;
   display: grid;
@@ -90,7 +98,7 @@ main {
   margin: 0 auto;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  background-color: #030b0d;
+  background-color: #080c21;
   font-family: "Inter", sans-serif;
   color: white;
 }
@@ -98,8 +106,6 @@ main {
 
 /* tarjetas de modelos */
 
-
-/* Tarjeta del mustang */
 .card-carros {
   width: 400px;
   aspect-ratio: 1 / 0.7;
