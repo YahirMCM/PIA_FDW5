@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+
 /* barra de navegacion */
 *,
 *::before,
@@ -78,4 +80,54 @@ nav ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  font-family: "Poppins", sans-serif;
+  background-color: #14141f;
+  height: 15vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(60, 46, 255);
+  text-align: center;
+  position: relative;
+}
+
+h1::before,
+h1::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease-out;
+}
+h1:hover::before {
+  color: #00bb48;
+  transform: translate(12px, -12px);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+h1:hover::after {
+  color: #ff47b5;
+  transform: translate(24px, -24px);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
