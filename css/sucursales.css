@@ -89,9 +89,17 @@ nav ul {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background: #080c21; 
+  font-family: "Euclid Circular A", "Poppins";
+  color: #f0e5ff;
+}
+
 div {
   font-family: "Poppins", sans-serif;
-  background-color: #14141f;
+  background-color: #080c21;
   height: 15vh;
   display: flex;
   justify-content: left;
@@ -106,7 +114,7 @@ h1 {
   text-decoration: none;
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(60, 46, 255);
+  -webkit-text-stroke-color: rgb(238, 222, 209);
   text-align: center;
   position: relative;
 }
@@ -119,15 +127,56 @@ h1::after {
   left: 0;
   transition: 0.3s ease-out;
 }
+/* texto de atras */
 h1:hover::before {
-  color: #00bb48;
-  transform: translate(12px, -12px);
+  color: #d045ff;
+  transform: translate(10px, -10px);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+/* texto de adelante */
 h1:hover::after {
-  color: #ff47b5;
-  transform: translate(24px, -24px);
+  color: #2dddba;
+  transform: translate(20px, -20px);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
+
+.store-locations {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.location {
+  background-color: #3498db;
+  color: #fff;
+  padding: 25px;
+  margin: 15px;
+  border-radius: 5px;
+  width: 1000px;
+  height: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.location img {
+  margin-right: auto;
+  width: max-content;
+  border-radius: 5px 5px 0 0;
+}
+
+.location:hover {
+  transform: scale(1.05);
+}
+
+.location h2 {
+  margin-bottom: 0;
+}
+
+.location p {
+  margin-top: 100;
+}
+

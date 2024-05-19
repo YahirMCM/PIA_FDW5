@@ -113,7 +113,7 @@ h1::after {
   transition: 0.3s ease-out;
 }
 h1:hover::before {
-  color: #baa347;
+  color: #e7c748;
   transform: translate(12px, -12px);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
