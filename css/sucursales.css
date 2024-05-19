@@ -73,3 +73,9 @@ nav ul {
     background: hsl(40, 83%, 49%);
   }
 }
+
+#imagen {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
